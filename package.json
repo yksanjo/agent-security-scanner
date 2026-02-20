@@ -1,0 +1,14 @@
+{
+  "name": "agent-security-scanner",
+  "version": "1.0.0",
+  "description": "AI Security Scanner",
+  "private": true,
+  "workspaces": ["packages/*", "services/*", "integrations/*"],
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present"
+  },
+  "keywords": ["agent", "ai", "vulnerability,compliance,audit,fix"],
+  "author": "Yoshi Kondo <yoshi@musicailab.com>",
+  "license": "MIT"
+}
