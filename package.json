@@ -5,7 +5,9 @@
   "private": true,
   "workspaces": ["packages/*", "services/*", "integrations/*"],
   "scripts": {
-    "test": "npm test --workspaces --if-present",
+    "test": "npm run test:smoke && npm run test:workspaces",
+    "test:smoke": "node --test tests/*.test.cjs",
+    "test:workspaces": "npm test --workspaces --if-present",
     "dev": "npm run dev --workspaces --if-present"
   },
   "keywords": ["agent", "ai", "vulnerability,compliance,audit,fix"],
